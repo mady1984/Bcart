@@ -1,0 +1,218 @@
+
+html, body { height: 100%; }
+body { margin-left: 10%;margin-right: 10%; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+.containermain
+{
+  
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: grid;
+      grid-template-rows: 5em auto 3em;
+    
+}
+
+.header{
+   grid-row: 1;  
+   background-color: blue;
+    justify-self: center;
+    align-self: center;
+    width:85%;
+}
+
+.bodycontent{
+  grid-row: 2;
+  overflow-y: auto;
+}
+
+.footer{
+   grid-row: 3;
+   width:85%;
+   justify-self: center;
+   align-self: center;
+    background: rgb(110, 112, 112);
+}
+
+.mycartname
+{
+   font-size: 25px;
+   font-weight: bold;
+   color:crimson;   
+   }
+
+.center-text
+{
+   position: relative;
+   top:50%;
+   text-align: center;  
+}
+.navmenu
+{
+   background-color:#000111;
+   border:1px pink solid;
+   width:auto ;
+     height: auto;
+   padding: 0 10px 0 0;
+   margin-top:50px;
+}
+
+.liststyle  {
+   list-style: none;
+   color: white;
+   height: auto;
+   cursor: pointer;
+   
+}
+ul{
+   margin: 0;
+   padding: 0;
+}
+li{
+   border-bottom: gray 1px solid;
+   width:auto;
+   height: auto;
+}
+
+ul li ul{
+margin-left:10px;
+}
+
+i{
+   float: right;
+   color: white;
+}
+
+.mynavbar
+{
+   display: flex;
+   float: left;
+  padding:5px;
+   background-color:primary;
+   height: auto;
+   
+
+}
+.mynavbar a:hover
+{
+   text-decoration: none;
+   color:crimson;
+}
+.navright
+{
+   display: flex;
+   float:right;
+   font-size: 20px;
+   color: white;
+  
+  
+}
+.navright  li{
+   border:none;
+   list-style-type: none;
+   padding: 10px;
+   
+}
+.mynavbar .navright .navmenu
+{
+   max-width: 360px;
+   background-color:blue;
+
+}
+.navdrop
+{
+   padding: 10px;
+   font-size: 14px;
+   color:crimson;  
+}
+
+.navdrop-submenu
+{
+   display: block;
+}
+@media only screen and (max-width: 600px) {
+   .containermain
+{
+  
+      height: 100%;
+      left: 0;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: grid;
+      grid-template-rows: 5em auto 3em;
+    
+}
+
+.header{
+   grid-row: 1;  
+   background-color: blue;
+    justify-self: center;
+    align-self: center;
+    width:85%;
+}
+
+.bodycontent{
+  grid-row: 2;
+  overflow-y: auto;
+}
+
+.footer{
+   grid-row: 3;
+   width:85%;
+   justify-self: center;
+   align-self: center;
+    background: rgb(110, 112, 112);
+}
+  
+.mycartname
+{
+   font-size: 12px;
+   width: auto;
+}
+.navright
+{
+   display:none;
+}
+.visiblebtn
+{
+   display: none;
+}
+
+}
+
+@media only screen and (min-width: 600px)
+{
+   .navdrop
+   {
+      display:none;
+   }
+
+}
+@media only screen and (min-width:300px)
+{
+   .header{
+      grid-row: 1;  
+       background-color: blue;
+       justify-self: center;
+       align-self: center;
+       width:85%;
+   }
+   
+   .bodycontent{
+     grid-row: 2;
+     overflow-y: auto;
+   }
+   
+   .footer{
+      grid-row: 3;
+      width:85%;
+      justify-self: center;
+      align-self: center;
+       background: rgb(110, 112, 112);
+   }
+}
+
